@@ -1,19 +1,17 @@
 .header {
   &__content {
-    
+    max-height: 100vh;
   }
 
   &__top {
+    position: absolute;
+    z-index: 2;
     padding: 0;
     margin: 0;
+    width: -webkit-fill-available;
+
     @include contentPadingInline;
 
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #e7e7e7;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
@@ -21,6 +19,13 @@
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
     }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: rgba(231, 231, 231, 0.8);
 
     &-right {
       display: flex;

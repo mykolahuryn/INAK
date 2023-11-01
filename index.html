@@ -8,52 +8,93 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   <title>INAK</title>
 </head>
 <body class="page__body">
   <header class="header">
     <div class="header__content">
-      <div class="header__top">
-        <a href="#" class="header__logo">
-          <img src="./images/icon/logo.png" alt="logo" class="logo">
-        </a>
-        
-        <div class="nav header__nav">
-          <div class="nav__content">
-            <ul class="nav__item">
-              <li class="nav__list">
-                <a href="#" class="nav__link">Domov</a>
-              </li>
-              <li class="nav__list">
-                <a href="#" class="nav__link">O nás</a>
-              </li>
-              <li class="nav__list">
-                <a href="#" class="nav__link">Aktuality</a>
-              </li>
-              <li class="nav__list">
-                <a href="#" class="nav__link">Výhody pre členov</a>
-              </li>
-              <li class="nav__list">
-                <a href="#" class="nav__link">Tlačivá</a>
-              </li>
-              <li class="nav__list">
-                <a href="#" class="nav__link">Elektronicka prihláška</a>
-              </li>
-              <li class="nav__list">
-                <a href="#" class="nav__link">Kontakty</a>
-              </li>
-            </ul>
+      <div class="header__botom">
+        <div class="slider swiper-container">
+          <div class="header__top">
+            <a href="#" class="header__logo">
+              <img src="./images/icon/logo.png" alt="logo" class="logo">
+            </a>
+            
+            <div class="nav header__nav">
+              <div class="nav__content">
+                <ul class="nav__item">
+                  <li class="nav__list">
+                    <a href="#" class="nav__link">Domov</a>
+                  </li>
+                  <li class="nav__list">
+                    <a href="#" class="nav__link">O nás</a>
+                  </li>
+                  <li class="nav__list">
+                    <a href="#" class="nav__link">Aktuality</a>
+                  </li>
+                  <li class="nav__list">
+                    <a href="#" class="nav__link">Výhody pre členov</a>
+                  </li>
+                  <li class="nav__list">
+                    <a href="#" class="nav__link">Tlačivá</a>
+                  </li>
+                  <li class="nav__list">
+                    <a href="#" class="nav__link">Elektronicka prihláška</a>
+                  </li>
+                  <li class="nav__list">
+                    <a href="#" class="nav__link">Kontakty</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="header__top-right">
+              <a href="tel:+1 234 555-55-55" class="header__phone">
+                <img src="./images/icon/phone.svg" alt="phone" class="icon">
+              </a>
+      
+              <a href="#menu" class="header__menu-open">
+                <img src="./images/icon/menu-open.svg" alt="menu-open" class="icon">
+              </a>
+            </div>
           </div>
-        </div>
+          <div class="slider__wrapper swiper-wrapper">
+            <div class="slider__slide swiper-slide">
+              <div class="slider__image slider__image-1">
+                <div class="slider__info">
+                  <h1 class="slider__title">CHRÁNIME VAŠE ZÁUJMY!</h1>
+                  <p class="slider__paragraph">Máš záujem o zmenu tvojich pracovných podmienok? Zaujímaš sa o možnosti zabezpečenia na svojom pracovisku?</p>
+                  <a href="#" class="slider__button">PRIDAJ SA K NÁM</a>
+                </div>
+              </div>
+            </div>
 
-        <div class="header__top-right">
-          <a href="tel:+1 234 555-55-55" class="header__phone">
-            <img src="./images/icon/phone.svg" alt="phone" class="icon">
-          </a>
-  
-          <a href="#menu" class="header__menu-open">
-            <img src="./images/icon/menu-open.svg" alt="menu-open" class="icon">
-          </a>
+            <div class="slider__slide swiper-slide">
+              <div class="slider__image slider__image-2">
+                <div class="slider__info">
+                  <h1 class="slider__title">Spolu vyjednáme viac</h1>
+                  <p class="slider__paragraph">Kolektívne úsilie a spolupráca umožňujú dosiahnuť väčšie výsledky. Tento princíp je dôležitý.</p>
+                  <a href="#" class="slider__button">PRIDAJ SA K NÁM</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__slide swiper-slide">
+              <div class="slider__image slider__image-3">
+                <div class="slider__info">
+                  <h1 class="slider__title">Spolu sme silnejší</h1>
+                  <p class="slider__paragraph">Spoločne vytvárame neuveriteľnú silu, ktorá dokáže prekonať aj tie najťažšie výzvy.</p>
+                  <a href="#" class="slider__button">PRIDAJ SA K NÁM</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination slider__pagination"></div>
         </div>
       </div>
 
@@ -143,5 +184,7 @@
   <main class="main"></main>
 
   <footer class="footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>

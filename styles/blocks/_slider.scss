@@ -13,7 +13,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    &-1::before {
+    &-1::after {
         content: "";
         background-image: url(/images/header/header-img-2.png);
         
@@ -29,7 +29,7 @@
         background-size: cover;
     }
 
-    &-2::before {
+    &-2::after {
         content: "";
         background-image: url(/images/header/header-img-3.png);
         position: absolute;
@@ -44,7 +44,7 @@
         background-size: cover;
     }
 
-    &-3::before {
+    &-3::after {
         content: "";
         background-image: url(/images/header/header-img-1.png);
         position: absolute;

@@ -213,7 +213,7 @@
 }
 .slider__image-1::before {
   content: "";
-  background-image: url(/images/header-img/header-img-2.jpg);
+  background-image: url(/images/header-img/header-img-2.png);
   position: absolute;
   top: 0;
   left: 0;
@@ -226,7 +226,7 @@
 }
 .slider__image-2::before {
   content: "";
-  background-image: url(/images/header-img/header-img-3.jpg);
+  background-image: url(/images/header-img/header-img-3.png);
   position: absolute;
   top: 0;
   left: 0;
@@ -239,7 +239,7 @@
 }
 .slider__image-3::before {
   content: "";
-  background-image: url(/images/header-img/header-img-1.jpg);
+  background-image: url(/images/header-img/header-img-1.png);
   position: absolute;
   top: 0;
   left: 0;

@@ -148,11 +148,11 @@
   &__pagination .swiper-pagination-bullet{
     width: 10px;
     height: 10px;
-    bottom: 0;
     z-index: 2;
   }
 
   .swiper-pagination{
+    bottom: 0;
     z-index: 2;
   }
 }

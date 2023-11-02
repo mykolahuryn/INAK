@@ -1,6 +1,7 @@
 .header {
   &__content {
-    max-height: 100vh;
+    min-height: 100vh;
+    min-width: $min-width;
   }
 
   &__top {

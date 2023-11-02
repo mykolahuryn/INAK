@@ -141,18 +141,11 @@
     @include onTablet {
       width: 400px;
     }
-
-
   }
 
-  &__pagination .swiper-pagination-bullet{
-    width: 10px;
-    height: 10px;
-    z-index: 2;
-  }
-
-  .swiper-pagination{
-    bottom: 0;
-    z-index: 2;
+  &__arow,
+  .swiper-button-prev,
+  .swiper-button-next {
+    z-index: 1;
   }
 }

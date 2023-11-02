@@ -325,12 +325,8 @@
     width: 400px;
   }
 }
-.slider__pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  z-index: 2;
-}
-.slider .swiper-pagination {
-  bottom: 0;
-  z-index: 2;
+.slider__arow,
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

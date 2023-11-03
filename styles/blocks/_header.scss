@@ -2,7 +2,6 @@
   &__content {
     min-height: 100vh;
     min-width: $min-width;
-
   }
 
   &__top {
@@ -62,5 +61,9 @@
         align-items: center;
       }
     }
+  }
+
+  &__botom {
+    overflow: hidden;
   }
 }

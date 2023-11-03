@@ -1,4 +1,7 @@
 .slider {
+  width: 100vw;
+  overflow: hidden;
+
   &__image {
     height: 100vh;
 
@@ -62,6 +65,7 @@
 
   &__info {
     padding: 25px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;

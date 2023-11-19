@@ -1,1 +1,7 @@
-.main {}
+.main {
+  &__section {
+    margin: 0 auto;
+    max-width: $max-width;
+    min-width: $min-width;
+  }
+}

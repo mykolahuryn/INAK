@@ -142,7 +142,7 @@
 }
 .aside__top {
   padding: 0;
-  margin: 0;
+  margin: 15px;
   padding-inline: 20px;
   display: flex;
   justify-content: space-between;

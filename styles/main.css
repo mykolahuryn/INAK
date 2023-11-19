@@ -707,7 +707,7 @@
   padding: 0;
   margin: 0;
   font-family: "Gabarito", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -852,6 +852,9 @@
   color: #c0cdd7;
 }
 
+.slider-testimonials {
+  margin-top: 25px;
+}
 .slider-testimonials__wrapper {
   position: relative;
 }

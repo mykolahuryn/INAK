@@ -47,7 +47,7 @@
 }
 .header__top-right {
   display: flex;
-  gap: 60px;
+  gap: 20px;
 }
 @media (min-width: 1180px) {
   .header__top-right {

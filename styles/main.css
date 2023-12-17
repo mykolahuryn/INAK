@@ -89,6 +89,7 @@
   border-top-right-radius: 15px;
 }
 .footer__content {
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
 }

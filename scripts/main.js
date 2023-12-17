@@ -28,3 +28,4 @@ new Swiper('.slider-testimonials', {
   spaceBetween: 100,
   loop: true,
 });
+

@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $font-family;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+  height: 60px;
+  width: 300px;
+  border-radius: 28px;
+
+  background-color: rgba(32, 96, 246, 0.9);
+  text-decoration: none;
+  color: white;
+
+  @include onTablet {
+    width: 400px;
+  }
+}

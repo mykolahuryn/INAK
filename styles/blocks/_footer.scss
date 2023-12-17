@@ -1,5 +1,41 @@
 .footer {
+  height: 100vh;
+  background-image: url('../../images/footer/footer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   &__content {
-    
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__grop {
+    &--left {
+      display: flex;
+      flex-direction: column;
+      &-title {
+        padding: 0;
+        margin: 0;
+
+        margin-top: 40px;
+        margin-bottom: 30px;
+        
+        color: $title-color;
+        text-align: center;
+        font-family: $font-family;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+
+        @include onTablet {
+          margin-top: 60px;
+          font-size: 42px;
+        }
+      }
+    }
   }
 }

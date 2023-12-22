@@ -62,7 +62,7 @@
 }
 @media (min-width: 740px) {
   .header__phone::after {
-    content: "+1 234 555-55-55";
+    content: "+421903153428";
     color: black;
     padding-left: 12px;
     display: flex;
@@ -93,7 +93,7 @@
   flex-direction: column;
   gap: 80px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 @media (min-width: 740px) {
   .footer__content {
@@ -103,6 +103,11 @@
 @media (min-width: 1180px) {
   .footer__content {
     padding-inline: 100px;
+  }
+}
+@media (min-width: 740px) {
+  .footer__content {
+    align-items: flex-start;
   }
 }
 @media (min-width: 1180px) {

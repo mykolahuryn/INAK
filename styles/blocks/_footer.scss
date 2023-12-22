@@ -14,7 +14,11 @@
     flex-direction: column;
     gap: 80px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+
+    @include onTablet {
+      align-items: flex-start;
+    }
     
     @include onDesktop {
       padding-top: 110px;

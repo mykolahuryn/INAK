@@ -1188,7 +1188,6 @@
   cursor: pointer;
   border: none;
   border-radius: 8px;
-  width: 400px;
 }
 @media (min-width: 1180px) {
   .form__button {

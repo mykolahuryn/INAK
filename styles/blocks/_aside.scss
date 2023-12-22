@@ -68,12 +68,15 @@
   }
 
   &__social {
-    margin: 0;
-    padding: 0;
     margin-top: 50px;
-    @include contentPadingInline;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    padding-left: 20px;
+    
+    @include onTablet {
+      padding-left: 40px;
+    }
+
+    @include onDesktop() {
+      padding-left: 100px;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .form {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 
   &__input {
     padding: 0;
@@ -9,7 +10,6 @@
 
     min-width: 300px;
 
-    width: 60%;
     background-color: transparent;
     border: none;
     border-radius: 15px;
@@ -21,11 +21,24 @@
     font-size: 15px;
     line-height: 22px;
     color: black;
+
+    @include onTablet {
+      width: 360px;
+    }
+
+    @include onDesktop {
+      width: 460px;
+    }
   }
 
   &__button {
     cursor: pointer;
-    margin: 0 auto;
     border: none;
+    border-radius: 8px;
+    width: 400px;
+
+    @include onDesktop {
+      max-width: 264px;
+    }
   }
 }

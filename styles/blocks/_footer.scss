@@ -1,30 +1,54 @@
 .footer {
-  height: 100vh;
-  background-image: url('../images/footer/footer.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #2C2C2C;
 
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   &__content {
     margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include contentPadingInline;
+
     display: flex;
     flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: flex-start;
+    
+    @include onDesktop {
+      padding-top: 110px;
+      padding-bottom: 110px;
+      flex-direction: row;
+      gap: 220px;
+    }
   }
 
   &__grop {
     &--left {
       display: flex;
       flex-direction: column;
+    
+      align-items: flex-start;
+
+      min-width: 300px;
+
+      @include onTablet {
+        width: 360px;
+      }
+  
+      @include onDesktop {
+        width: 460px;
+      }
+    
       &-title {
         padding: 0;
         margin: 0;
 
         margin-top: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 46px;
         
-        color: $title-color;
+        color: white;
         text-align: center;
         font-family: $font-family;
         font-size: 32px;
@@ -34,8 +58,89 @@
 
         @include onTablet {
           margin-top: 60px;
+          margin-bottom: 56px;
           font-size: 42px;
         }
+      }
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: column;
+          
+      align-items: flex-start;
+
+      min-width: 300px;
+
+      @include onTablet {
+        width: 360px;
+      }
+  
+      @include onDesktop {
+        width: 460px;
+      }
+
+      &-title {
+        padding: 0;
+        margin: 0;
+
+        margin-top: 40px;
+        margin-bottom: 46px;
+        
+        color: white;
+        text-align: center;
+        font-family: $font-family;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+
+        @include onTablet {
+          margin-top: 60px;
+          margin-bottom: 56px;
+          font-size: 42px;
+        }
+      }
+
+      &-name {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 6px;
+
+        color: #FFF;
+
+        font-family: $font-family;
+        font-size: 11px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+
+      &-link {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 40px;
+
+        color: #FFF;
+
+        font-family: $font-family;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 2px;
+
+        text-decoration: none;
+
+        @include onTablet {
+          margin-bottom: 56px;
+        }
+      }
+
+      &-social {
+        margin-top: 16px;
+        gap: 38px;
       }
     }
   }

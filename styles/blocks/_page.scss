@@ -1,4 +1,11 @@
 .page {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  scroll-behavior: smooth;
   &__body {
     padding: 0;
     margin: 0;

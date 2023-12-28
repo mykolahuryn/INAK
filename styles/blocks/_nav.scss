@@ -82,7 +82,9 @@
 
     &:hover {
       color: black;
-      box-shadow: 0 0 35px rgba(87, 130, 155, 0.8); /* Додаємо синю тінь при наведенні */
+      @include onTablet {
+        box-shadow: 0 0 35px rgba(87, 130, 155, 0.8);
+      }
     }
   }
 }

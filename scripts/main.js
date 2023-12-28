@@ -95,6 +95,44 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  var newsPerPage = 2;
+  var newsBlocks = document.querySelectorAll('.newses__news');
+  var totalPages = Math.ceil(newsBlocks.length / newsPerPage);
+  var paginationContainer = document.querySelector('.pagination');
+
+  showPage(1);
+
+  function showPage(pageNumber) {
+
+    window.scrollTo(0, 0);
+
+    newsBlocks.forEach(function (block) {
+      block.classList.remove('active');
+    });
+
+    var startIndex = (pageNumber - 1) * newsPerPage;
+    var endIndex = startIndex + newsPerPage;
+
+    for (var i = startIndex; i < endIndex && i < newsBlocks.length; i++) {
+      newsBlocks[i].classList.add('active');
+    }
+  }
+
+  for (var i = 1; i <= totalPages; i++) {
+    var pageLink = document.createElement('a');
+    pageLink.href = '#';
+    pageLink.textContent = i;
+
+    pageLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      showPage(parseInt(event.target.textContent));
+    });
+
+    paginationContainer.appendChild(pageLink);
+  }
+});
+
 
 
 

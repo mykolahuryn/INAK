@@ -58,6 +58,44 @@ new Swiper('.slider-testimonials', {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  var navLinkPAside = document.querySelector('.aside__nav .nav__link--p');
+  var subMenuAside = document.querySelector('.aside__nav .nav__item--sub-menu');
+
+  var navLinkPHeader = document.querySelector('.header__nav .nav__link--p');
+  var subMenuHeader = document.querySelector('.header__nav .nav__item--sub-menu');
+
+  var clickCountAside = 0;
+  var clickCountHeader = 0;
+
+  navLinkPAside.addEventListener("click", function (e) {
+    clickCountAside++;
+    updateSubMenuStyles(subMenuAside, clickCountAside);
+    e.preventDefault();
+  });
+
+  navLinkPHeader.addEventListener("click", function (e) {
+    clickCountHeader++;
+    updateSubMenuStyles(subMenuHeader, clickCountHeader);
+    e.preventDefault();
+  });
+
+  document.addEventListener("wheel", function () {
+    clickCountAside = 0;
+    clickCountHeader = 0;
+
+    updateSubMenuStyles(subMenuAside, clickCountAside);
+    updateSubMenuStyles(subMenuHeader, clickCountHeader);
+  });
+
+  function updateSubMenuStyles(subMenu, clickCount) {
+    subMenu.style.opacity = clickCount % 2 === 1 ? 1 : 0;
+    subMenu.style.maxHeight = clickCount % 2 === 1 ? "200px" : "0";
+  }
+});
+
+
+
 
 
 

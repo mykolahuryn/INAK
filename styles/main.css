@@ -290,18 +290,19 @@
 .nav__list--sub-menu--mob {
   background-color: white;
 }
-.nav__list:hover .nav__item--sub-menu {
-  opacity: 1;
-  max-height: 200px;
-}
 .nav__link {
+  position: relative;
   padding: 5px;
   border-radius: 10px;
   text-decoration: none;
   font-family: "Gabarito", sans-serif;
   font-size: 16px;
-  color: black;
+  color: rgb(88, 86, 86);
   transition: box-shadow 0.3s ease;
+}
+.nav__link--active {
+  color: black;
+  font-weight: 800;
 }
 .nav__link--p {
   padding: 5px;
@@ -312,6 +313,7 @@
   cursor: pointer;
 }
 .nav__link:hover {
+  color: black;
   box-shadow: 0 0 35px rgba(87, 130, 155, 0.8); /* Додаємо синю тінь при наведенні */
 }
 

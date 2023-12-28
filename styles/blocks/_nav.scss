@@ -52,22 +52,24 @@
         background-color: white;
       }
     }
-
-    &:hover .nav__item--sub-menu {
-      opacity: 1;
-      max-height: 200px;
-    }
   }
 
   &__link {
+    position: relative;
+
     padding: 5px;
     border-radius: 10px;
     text-decoration: none;
     font-family: $font-family;
     font-size: 16px;
-    color: black;
+    color: rgb(88, 86, 86);
 
     transition: box-shadow 0.3s ease;
+    
+    &--active {
+      color: black;
+      font-weight: 800;
+    }
 
     &--p {
       padding: 5px;
@@ -79,6 +81,7 @@
     }
 
     &:hover {
+      color: black;
       box-shadow: 0 0 35px rgba(87, 130, 155, 0.8); /* Додаємо синю тінь при наведенні */
     }
   }

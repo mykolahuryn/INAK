@@ -1,0 +1,13 @@
+.invite {
+  &__content {
+    padding: 0;
+    margin: 0;
+    padding-top: 180px;
+
+    @include contentPadingInline;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

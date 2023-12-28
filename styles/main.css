@@ -1132,6 +1132,7 @@
 }
 
 .timeline {
+  margin-top: 100px;
   padding-inline: 20px;
 }
 @media (min-width: 800px) {
@@ -1524,6 +1525,7 @@ time {
 .vote__img {
   width: -webkit-fill-available;
   max-width: 450px;
+  opacity: 0.5;
 }
 .vote__title {
   padding: 0;
@@ -1535,6 +1537,7 @@ time {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  opacity: 0.5;
 }
 
 .bonus__content {
@@ -1559,6 +1562,7 @@ time {
 .bonus__img {
   width: -webkit-fill-available;
   max-width: 450px;
+  opacity: 0.5;
 }
 .bonus__title {
   padding: 0;
@@ -1570,6 +1574,7 @@ time {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  opacity: 0.5;
 }
 
 .download__content {

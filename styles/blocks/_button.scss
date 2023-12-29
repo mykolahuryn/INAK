@@ -17,6 +17,10 @@
   text-decoration: none;
   color: white;
 
+  &:hover {
+    background-color: rgba(7, 73, 29, 0.9);
+  }
+
   @include onTablet {
     width: 400px;
   }

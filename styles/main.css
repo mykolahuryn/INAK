@@ -219,7 +219,12 @@
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 2px;
+  border-radius: 10px;
   text-decoration: none;
+  transition: box-shadow 0.3s ease;
+}
+.footer__grop--right-link:hover {
+  box-shadow: 0 0 35px rgba(0, 44, 70, 0.8);
 }
 @media (min-width: 800px) {
   .footer__grop--right-link {
@@ -233,11 +238,15 @@
 
 .logo {
   height: 70px;
+  transition: transform 0.3s ease;
 }
 @media (min-width: 800px) {
   .logo {
     height: 90px;
   }
+}
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .nav {
@@ -323,6 +332,11 @@
 
 .icon {
   height: 30px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+.icon:hover {
+  box-shadow: 0 0 35px rgba(0, 44, 70, 0.8);
 }
 
 .aside {
@@ -798,6 +812,10 @@
   background-color: white;
   border-radius: 16px;
   width: 280px;
+  transition: transform 0.3s ease;
+}
+.testimonials-card:hover {
+  transform: scale(1.1);
 }
 .testimonials-card__content {
   padding-block: 32px;
@@ -999,6 +1017,9 @@
   text-decoration: none;
   color: white;
 }
+.button:hover {
+  background-color: rgba(7, 73, 29, 0.9);
+}
 @media (min-width: 800px) {
   .button {
     width: 400px;
@@ -1104,6 +1125,10 @@
   font-size: 15px;
   line-height: 22px;
   color: black;
+  transition: box-shadow 0.3s ease;
+}
+.form__input:hover {
+  box-shadow: 0 0 35px rgba(87, 130, 155, 0.8);
 }
 @media (min-width: 800px) {
   .form__input {

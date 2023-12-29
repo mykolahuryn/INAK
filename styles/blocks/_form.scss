@@ -20,6 +20,12 @@
     line-height: 22px;
     color: black;
 
+    transition: box-shadow 0.3s ease;
+
+    &:hover  {
+      box-shadow: 0 0 35px rgba(87, 130, 155, 0.8);
+    }
+
     @include onTablet {
       width: 360px;
     }

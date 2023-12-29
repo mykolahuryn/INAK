@@ -1659,4 +1659,133 @@ time {
   .invite__content {
     padding-inline: 100px;
   }
+}
+.invite__title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #253757;
+  font-family: "Gabarito", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.invite__info {
+  padding: 0;
+  margin: 0;
+  margin-top: 24px;
+  color: #6C788B;
+  font-family: "Gabarito", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 150%;
+}
+@media (min-width: 800px) {
+  .invite__info {
+    font-size: 16px;
+  }
+}
+.invite__form {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  display: block;
+  width: -webkit-fill-available;
+}
+@media (min-width: 800px) {
+  .invite__form {
+    --columns: 2;
+    display: grid;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    grid-template-columns: repeat(var(--columns), 1fr);
+  }
+}
+@media (min-width: 800px) and (min-width: 800px) {
+  .invite__form {
+    --columns: 6;
+  }
+}
+@media (min-width: 800px) and (min-width: 1180px) {
+  .invite__form {
+    --columns: 12;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+.invite__form--button {
+  grid-column: 1/-1;
+  max-width: none;
+  width: -webkit-fill-available;
+  height: 50px;
+}
+.invite__form-input {
+  width: -webkit-fill-available;
+  border: 3px solid rgba(76, 142, 240, 0.548);
+}
+.invite__form-input-1 {
+  grid-column: 1/4;
+}
+@media (min-width: 1180px) {
+  .invite__form-input-1 {
+    grid-column: 1/7;
+  }
+}
+.invite__form-input-2 {
+  grid-column: 4/-1;
+}
+@media (min-width: 1180px) {
+  .invite__form-input-2 {
+    grid-column: 7/-1;
+  }
+}
+.invite__form-input-3 {
+  grid-column: 1/4;
+}
+@media (min-width: 1180px) {
+  .invite__form-input-3 {
+    grid-column: 1/7;
+  }
+}
+.invite__form-input-4 {
+  grid-column: 4/-1;
+}
+@media (min-width: 1180px) {
+  .invite__form-input-4 {
+    grid-column: 7/-1;
+  }
+}
+.invite__form-input-5 {
+  grid-column: 1/4;
+}
+@media (min-width: 1180px) {
+  .invite__form-input-5 {
+    grid-column: 1/7;
+  }
+}
+.invite__form-input-6 {
+  grid-column: 4/-1;
+}
+@media (min-width: 1180px) {
+  .invite__form-input-6 {
+    grid-column: 7/-1;
+  }
+}
+.invite__form-input-7 {
+  grid-column: 1/4;
+}
+@media (min-width: 1180px) {
+  .invite__form-input-7 {
+    grid-column: 1/7;
+  }
+}
+.invite__form-input-8 {
+  grid-column: 4/-1;
+}
+@media (min-width: 1180px) {
+  .invite__form-input-8 {
+    grid-column: 7/-1;
+  }
 }/*# sourceMappingURL=main.css.map */

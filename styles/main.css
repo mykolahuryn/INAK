@@ -287,6 +287,7 @@
   cursor: pointer;
 }
 .nav__list--sub-menu--mob {
+  margin-top: 5px;
   background-color: white;
 }
 .nav__link {
@@ -1523,8 +1524,13 @@ time {
   }
 }
 .vote__img {
-  max-width: 450px;
+  max-width: 200px;
   opacity: 0.7;
+}
+@media (min-width: 800px) {
+  .vote__img {
+    max-width: 450px;
+  }
 }
 .vote__title {
   padding: 0;
@@ -1558,8 +1564,13 @@ time {
   }
 }
 .bonus__img {
-  max-width: 450px;
+  max-width: 200px;
   opacity: 0.7;
+}
+@media (min-width: 800px) {
+  .bonus__img {
+    max-width: 450px;
+  }
 }
 .bonus__title {
   padding: 0;

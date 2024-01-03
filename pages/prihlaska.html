@@ -172,20 +172,28 @@
 
           <p class="invite__info">Zaujíma Vás možnosť pripojenia sa k odborom, no nechce sa Vám investovať čas do návštevy našej kancelárie? Ceníme si Váš čas a preto sme tu, aby sme Vám uľahčili celý proces. Stačí vyplniť jednoduchý formulár na našej webovej stránke a stať sa našim členom ešte nikdy nebolo také jednoduché. Po vyplnení Vás budeme kontaktovať a dohodneme sa na vhodnom čase a mieste, kde môžeme vybaviť potrebné formality. Vaše osobné údaje sú samozrejme chránené v súlade so smernicou GDPR a podmienkami spracovania osobných údajov, ktoré nájdete na našej webovej stránke. My sme tu, aby sme Vám tento proces zjednodušili.</p>
         
-          <form class="form invite__form">
+          <form method="post" class="form invite__form">
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="odboryinak.sk">
+            <input type="hidden" name="admin_email" value="info@odboryinak.sk">
+            <input type="hidden" name="form_subject" value="ELEKTRONICKÁ PRIHLÁŠKA ZA ČLENA ODBOROVÉHO ZVÄZU INAK">
+            <!-- END Hidden Required Fields -->
+
             <input
-              name="Meno a priezvisko"
+              name="Meno"
               type="text"
               class="form__input invite__form-input invite__form-input-1"
-              placeholder="Vaše meno a priezvisko (povinné)"
+              placeholder="Vaše meno (povinné)"
+              required
             >
-  
+
             <input
-              name="E-mail"
+              name="Priezvisko"
               type="text"
               class="form__input invite__form-input invite__form-input-2"
-              placeholder="Váš email (povinné)"
-             
+              placeholder="Vaše priezvisko (povinné)"
+              required
             >
 
             <input
@@ -193,44 +201,51 @@
               type="text"
               class="form__input invite__form-input invite__form-input-3"
               placeholder="Adresa trvalého bydliska (povinné)"
+              required
             >
 
             <input
-              name="Osobné číslo"
+              name="Názov podniku-pracoviska"
               type="text"
               class="form__input invite__form-input invite__form-input-4"
-              placeholder="Osobné číslo (povinné)"
+              placeholder="Názov podniku-pracoviska (povinné)"
+              required
             >
 
             <input
-              name="Dátum narodenia"
+              name="Pracovná pozícia"
               type="text"
               class="form__input invite__form-input invite__form-input-5"
-              placeholder="Dátum narodenia (povinné)"
+              placeholder="Pracovná pozícia (povinné)"
+              required
             >
 
             <input
               name="Telefónne číslo"
-              type="text"
+              type="tel"
               class="form__input invite__form-input invite__form-input-6"
               placeholder="Telefónne číslo (povinné)"
+              required
             >
 
             <input
-              name="Názov linky"
-              type="text"
+              name="E-mail"
+              type="email"
               class="form__input invite__form-input invite__form-input-7"
-              placeholder="Názov linky (povinné)"
+              placeholder="Váš email (povinné)"
+              required
             >
 
+
             <input
-              name="Dátum vyplnenia"
+              name="Dátum narodenia"
               type="text"
               class="form__input invite__form-input invite__form-input-8"
-              placeholder="Dátum vyplnenia (povinné)"
+              placeholder="Dátum narodenia (povinné)"
+              required
             >
 
-            <input type="submit" value="Poslať" class="button form__button invite__form--button">
+            <button class="button form__button invite__form--button">Poslať</button>
           </form>
         </div>
       </section>
@@ -242,32 +257,39 @@
       <div class="footer__grop--left">
         <h2 class="footer__grop--left-title">Napíšte nám</h2>
 
-        <form class="form">
-          <input
-            name="Name"
-            type="text"
-            class="form__input"
-            placeholder="Meno"
-          >
+        <form method="post" class="form footer__form">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="odboryinak.sk">
+          <input type="hidden" name="admin_email" value="info@odboryinak.sk">
+          <input type="hidden" name="form_subject" value="Forma spätnej väzby">
+          <!-- END Hidden Required Fields -->
 
-          <input
-            name="E-mail"
-            type="text"
-            class="form__input"
-            placeholder="E-mail"
-           
-          >
+      <input
+        name="Meno"
+        type="text"
+        class="form__input"
+        placeholder="Meno"
+        required
+      >
 
-          <textarea
-            name="Mesage"
-            placeholder="Tvoja správa"
-            class="form__input"
-            cols="30"
-            rows="5"
-          ></textarea>
+      <input
+        name="Email"
+        type="email"
+        class="form__input"
+        placeholder="E-mail"
+        required
+      >
 
-          <input type="submit" value="Poslať" class="button form__button">
-        </form>
+      <input
+        name="Sprava"
+        type="text"
+        placeholder="Tvoja správa"
+        class="form__input"
+        required
+      >
+
+      <button class="button form__button">Poslať</button>
+    </form>
       </div>
 
       <div class="footer__grop--right">

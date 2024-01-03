@@ -734,31 +734,33 @@
 
         <form method="post" class="form footer__form">
           		<!-- Hidden Required Fields -->
-              <input type="hidden" name="project_name" value="Site Name">
+              <input type="hidden" name="project_name" value="odboryinak.sk">
               <input type="hidden" name="admin_email" value="info@odboryinak.sk">
-              <input type="hidden" name="form_subject" value="Form Subject">
+              <input type="hidden" name="form_subject" value="Forma spätnej väzby">
               <!-- END Hidden Required Fields -->
 
           <input
-            name="name"
+            name="Meno"
             type="text"
             class="form__input"
             placeholder="Meno"
+            required
           >
 
           <input
-            name="email"
-            type="text"
+            name="Email"
+            type="email"
             class="form__input"
             placeholder="E-mail"
-           
+            required
           >
 
           <input
-            name="text"
+            name="Sprava"
             type="text"
             placeholder="Tvoja správa"
             class="form__input"
+            required
           >
 
           <button class="button form__button">Poslať</button>

@@ -143,7 +143,7 @@ $(document).ready(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("Ďakujeme, budeme Vás čo najskôr kontaktovať!");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
@@ -164,7 +164,7 @@ $(document).ready(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("Ďakujeme, budeme Vás čo najskôr kontaktovať!");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
@@ -174,3 +174,4 @@ $(document).ready(function() {
 	});
 
 });
+
